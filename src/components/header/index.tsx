@@ -13,7 +13,7 @@ const NAV_LINKS = [
   { href: "/joinus", label: "Join Us" },
 ] as const;
 
-export function Header() {
+export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const navRef = useRef<HTMLElement>(null);
   const pathname = usePathname();

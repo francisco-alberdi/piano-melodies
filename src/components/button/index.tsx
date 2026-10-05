@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import styles from "./styles.module.css";
 
@@ -12,20 +10,20 @@ interface ButtonProps {
   variant?: "default" | "cta" | "ghost";
 }
 
-const Button: React.FC<ButtonProps> = ({
+export default function Button({
   children,
   onClick,
   type = "button",
   className,
   disabled = false,
   variant = "default",
-}) => {
+}: ButtonProps) {
   const variantClass =
     variant === "cta"
       ? styles.cta
       : variant === "ghost"
-      ? styles.ghost
-      : styles.button;
+        ? styles.ghost
+        : styles.button;
 
   return (
     <button
@@ -37,6 +35,4 @@ const Button: React.FC<ButtonProps> = ({
       {children}
     </button>
   );
-};
-
-export default Button;
+}

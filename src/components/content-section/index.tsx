@@ -13,13 +13,13 @@ interface ContentSectionProps {
   imagePosition: "left" | "right";
 }
 
-const ContentSection: React.FC<ContentSectionProps> = ({
+export default function ContentSection({
   title,
   description,
   imageSrc,
   imageAlt,
   imagePosition,
-}) => {
+}: ContentSectionProps) {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -42,8 +42,8 @@ const ContentSection: React.FC<ContentSectionProps> = ({
         flexDirection: isMobile
           ? "column"
           : imagePosition === "left"
-          ? "row-reverse"
-          : "row", // Dynamically set layout
+            ? "row-reverse"
+            : "row", // Dynamically set layout
       }}
     >
       <div className={styles.text}>
@@ -67,7 +67,7 @@ const ContentSection: React.FC<ContentSectionProps> = ({
               <p key={index}>{paragraph}</p>
             ) : (
               <div key={index}>{paragraph}</div>
-            )
+            ),
           )
         ) : typeof description === "string" ? (
           <p>{description}</p>
@@ -88,6 +88,4 @@ const ContentSection: React.FC<ContentSectionProps> = ({
       )}
     </div>
   );
-};
-
-export default ContentSection;
+}

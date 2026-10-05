@@ -268,30 +268,30 @@ const photos = [
   },
 ];
 
-const RecitalsPage = () => (
-  <div className={styles.recitalsPage}>
-    <div className={styles.pageBanner}>
-      <h1>Our Recitals</h1>
-      <p>Celebrating every student's musical journey.</p>
-    </div>
-
-    <main className={styles.mainContent}>
-      <div className={styles.gallery}>
-        {photos.map((photo, index) => (
-          <div key={index} className={styles.photoWrapper}>
-            <Image
-              src={photo.src}
-              alt={photo.alt}
-              width={900}
-              height={700}
-              className={styles.photo}
-              sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 25vw"
-            />
-          </div>
-        ))}
+export default function RecitalsPage() {
+  return (
+    <div className={styles.recitalsPage}>
+      <div className={styles.pageBanner}>
+        <h1>Our Recitals</h1>
+        <p>Celebrating every student's musical journey.</p>
       </div>
-    </main>
-  </div>
-);
 
-export default RecitalsPage;
+      <main className={styles.mainContent}>
+        <div className={styles.gallery}>
+          {photos.map((photo, index) => (
+            <div key={index} className={styles.photoWrapper}>
+              <Image
+                src={photo.src}
+                alt={photo.alt}
+                width={900}
+                height={700}
+                className={styles.photo}
+                sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 25vw"
+              />
+            </div>
+          ))}
+        </div>
+      </main>
+    </div>
+  );
+}

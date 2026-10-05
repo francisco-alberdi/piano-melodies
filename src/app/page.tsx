@@ -1,12 +1,10 @@
-"use client";
-
 import Link from "next/link";
 import styles from "./styles.module.css";
-import Button from "./components/button";
-import Review from "./components/review";
-import ContentSection from "./components/content-section";
+import Review from "../components/review";
+import Button from "@/components/button";
+import ContentSection from "@/components/content-section";
 
-const HomePage = () => (
+export const HomePage = () => (
   <div className={styles.pageWrapper}>
     <section className={styles.hero}>
       <div className={styles.heroOverlay}>
@@ -124,5 +122,3 @@ const HomePage = () => (
     </div>
   </div>
 );
-
-export default HomePage;

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { FaInstagram, FaFacebook, FaLinkedin } from "react-icons/fa";
 import styles from "./styles.module.css";
 
-export const Footer: React.FC = () => {
+export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.footerContent}>
@@ -74,4 +74,4 @@ export const Footer: React.FC = () => {
       </div>
     </footer>
   );
-};
+}
