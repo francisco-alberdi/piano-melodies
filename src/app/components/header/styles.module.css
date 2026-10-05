@@ -112,7 +112,7 @@
   margin-left: 12px;
   transition:
     background 0.2s ease,
-    tranform 0.2s ease;
+    transform 0.2s ease;
   white-space: nowrap;
 }
 
