@@ -2,7 +2,7 @@ import styles from "./styles.module.css";
 
 export default function PrivacyPolicyPage() {
   return (
-    <div className={styles.joinUsPage}>
+    <div className={styles.privacyPolicyPage}>
       <header className={styles.pageBanner}>
         <h1>Privacy Policy</h1>
         <p>Last updated: October 2026</p>
@@ -88,9 +88,16 @@ export default function PrivacyPolicyPage() {
               us directly:
             </p>
             <p>
-              <strong>Email:</strong> [Your Email Address Here]
-              <br />
-              <strong>Phone:</strong> [Your Phone Number Here]
+              <strong>
+                <a href="mailto:pianomelodiesstudio@gmail.com">
+                  pianomelodiesstudio@gmail.com
+                </a>
+              </strong>
+            </p>
+            <p>
+              <strong>
+                <a href="tel:+17866516600">+1 (786) 651-6600</a>
+              </strong>
             </p>
           </section>
         </div>

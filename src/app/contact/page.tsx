@@ -36,7 +36,7 @@ export default function ContactPage() {
         <ContentSection
           title="Interested in a Class?"
           description={[
-            "We would love to hear from you! Feel free to reach out to us via email, phone, or the form below.",
+            "We would love to hear from you! Feel free to reach out to us via the form below.",
             <Button
               key="join-contact"
               variant="cta"
