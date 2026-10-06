@@ -103,7 +103,7 @@ export default function AboutPage() {
 
         {/* Employee 5 Section */}
         <ContentSection
-          title="Meet Leidy"
+          title="Meet Maria Carla"
           description={[
             "Maria Carla Albuerne is a music educator and performer from Cuba with over eight years of experience in music performance and teaching. She is currently pursuing a Bachelor of Music in Clarinet Performance at Florida International University. Maria Carla teaches clarinet, saxophone, and piano, helping students develop their musical skills, confidence, and enjoyment of music.",
             "With a passion for working with students of different ages and experience levels, Maria Carla creates a positive and encouraging learning environment where students feel comfortable exploring music and developing at their own pace. She believes that music lessons should be both educational and enjoyable, and she strives to make each lesson engaging, supportive, and tailored to the individual needs and goals of every student.",
