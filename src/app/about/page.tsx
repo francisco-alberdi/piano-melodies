@@ -100,6 +100,19 @@ export default function AboutPage() {
           imageAlt="Leidy Portrait"
           imagePosition="right"
         />
+
+        {/* Employee 5 Section */}
+        <ContentSection
+          title="Meet Leidy"
+          description={[
+            "Maria Carla Albuerne is a music educator and performer from Cuba with over eight years of experience in music performance and teaching. She is currently pursuing a Bachelor of Music in Clarinet Performance at Florida International University. Maria Carla teaches clarinet, saxophone, and piano, helping students develop their musical skills, confidence, and enjoyment of music.",
+            "With a passion for working with students of different ages and experience levels, Maria Carla creates a positive and encouraging learning environment where students feel comfortable exploring music and developing at their own pace. She believes that music lessons should be both educational and enjoyable, and she strives to make each lesson engaging, supportive, and tailored to the individual needs and goals of every student.",
+            "As a performer, Maria Carla brings her own experience and love for music into her teaching, inspiring students to build strong musical foundations while developing a genuine appreciation for their instrument. She is fluent in both English and Spanish and is excited to share her passion for music with the students at Piano Melodies Studio.",
+          ]}
+          imageSrc="/images/portraits/maria_c_portrait.png"
+          imageAlt="Maria Carla Portrait"
+          imagePosition="left"
+        />
       </main>
     </div>
   );
