@@ -1,3 +1,5 @@
+"use client";
+
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import styles from "./styles.module.css";
 import Button from "@/components/button";

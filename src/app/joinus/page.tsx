@@ -1,3 +1,5 @@
+"use client";
+
 import Button from "@/components/button";
 import ContentSection from "@/components/content-section";
 import styles from "./styles.module.css";
