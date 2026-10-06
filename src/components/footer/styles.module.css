@@ -28,15 +28,28 @@
   font-weight: 700;
 }
 
-.footerTagLine {
+.footerTagline {
   color: rgba(255, 255, 255, 0.65);
   font-size: 0.88rem;
-  margin: 0 0 20 px;
+  margin: 0 0 20px;
 }
 
 .socialLinks {
   display: flex;
+  align-items: center;
   gap: 16px;
+  margin-top: 16px;
+}
+
+.socialLinks a {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.35rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
 }
 
 .socialLinks a:hover {
@@ -52,7 +65,7 @@
 
 .footerNavTitle {
   font-family: "Inter", sans-serif;
-  font-size: 0.72 rem;
+  font-size: 0.72rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1.2px;
@@ -72,7 +85,7 @@
 .footerNavList a {
   color: rgba(255, 255, 255, 0.72);
   font-size: 0.9rem;
-  margin: 0 0 10px;
+  transition: color 0.2s ease;
 }
 
 .footerNavList a:hover {
@@ -95,13 +108,29 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 16px 40px;
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px; */
 }
 
 .footerBottom p {
   color: rgba(255, 255, 255, 0.45);
   font-size: 0.8rem;
   margin: 0;
-  text-align: center;
+}
+
+.legalLinks a {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.8rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.legalLinks a:hover {
+  color: white;
+  text-decoration: underline;
 }
 
 @media (max-width: 768px) {
@@ -117,5 +146,7 @@
 
   .footerBottom {
     padding: 14px 20px;
+    flex-direction: column;
+    text-align: center;
   }
 }

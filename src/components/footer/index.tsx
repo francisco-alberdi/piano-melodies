@@ -9,7 +9,7 @@ export default function Footer() {
         <div className={styles.footerBrand}>
           <p className={styles.footerTitle}>Piano Melodies Studio</p>
           <p className={styles.footerTagline}>Where Every Melody Sparks Joy</p>
-          <div>
+          <div className={styles.socialLinks}>
             <a
               href="https://www.instagram.com/pianomelodies_studio/"
               target="_blank"
@@ -70,7 +70,13 @@ export default function Footer() {
       </div>
 
       <div className={styles.footerBottom}>
-        <p>&copy; 2026 Piano Melodies LLC. All rights reserved.</p>
+        <p>
+          © {new Date().getFullYear()} Piano Melodies Studio. All rights
+          reserved.
+        </p>
+        <div className={styles.legalLinks}>
+          <a href="/privacy-policy">Privacy Policy</a>
+        </div>
       </div>
     </footer>
   );
