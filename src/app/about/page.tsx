@@ -123,7 +123,7 @@ export default function AboutPage() {
             "Alongside her performance experience, Ulyana has been teaching private piano lessons since 2022. She enjoys working with students of different ages and skill levels, adapting her lessons to each student's personality and learning pace. Her goal is to create an encouraging and engaging environment where students can build confidence, develop their musical abilities, and discover a genuine love for music.",
           ]}
           imageSrc="/images/portraits/ulyana_portrait.jpeg"
-          imageAlt="Maria Carla Portrait"
+          imageAlt="Ulyana Koshechkina Portrait"
           imagePosition="left"
         />
       </main>
