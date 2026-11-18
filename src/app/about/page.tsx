@@ -113,6 +113,19 @@ export default function AboutPage() {
           imageAlt="Maria Carla Portrait"
           imagePosition="left"
         />
+
+        {/* Employee 6 Section */}
+        <ContentSection
+          title="Meet Ulyana"
+          description={[
+            "Ulyana Koshechkina is a pianist and music educator with over 12 years of classical piano experience. Her musical education was shaped by experienced Russian piano teachers, who helped her develop a strong technical foundation, musical discipline, and an appreciation for classical music.",
+            "She is currently pursuing a Bachelor of Music in Piano Performance at the University of Miami’s Frost School of Music as a Presidential Scholar, studying with renowned pianist Santiago Rodriguez. Throughout her musical career, Ulyana has received recognition in national and international competitions, including First Prize at the Florida Keys International Music Competition, and has performed at Carnegie Hall.",
+            "Alongside her performance experience, Ulyana has been teaching private piano lessons since 2022. She enjoys working with students of different ages and skill levels, adapting her lessons to each student's personality and learning pace. Her goal is to create an encouraging and engaging environment where students can build confidence, develop their musical abilities, and discover a genuine love for music.",
+          ]}
+          imageSrc="/images/portraits/ulyana_portrait.jpeg"
+          imageAlt="Maria Carla Portrait"
+          imagePosition="left"
+        />
       </main>
     </div>
   );
